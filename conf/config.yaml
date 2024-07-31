@@ -1,0 +1,36 @@
+name: "webapp"
+mode: "dev"
+version: "v1.0"
+port: 8888
+start_time: "2006-01-01"
+machine_id: 1
+
+log:
+  level: "info"
+  filename: "log/webapp.log"
+  max_size: 10
+  max_age: 30
+  max_backups: 5
+
+mysql:
+  username: "root"
+  password: "123456"
+  host: "10.0.0.180"
+  port: 3306
+  dbname: "demosqlx"
+  max_open_conns: 100
+  max_idle_conns: 20
+
+redis:
+  addr: "10.0.0.180"
+  password: ""
+  db: 0
+  pool_size: 20
+  port: 6379
+
+
+
+
+
+
+
